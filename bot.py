@@ -122,7 +122,7 @@ async def process_phone(message: types.Message, state: FSMContext):
     )
     
     await message.answer_document(
-            document=types.FSInputFile("./data.pptx"),
+            document=types.FSInputFile("./Arzonchi rohat.pptx"),
             caption="📚 Hayotizdagi arzon rohatlar "
         )
     
