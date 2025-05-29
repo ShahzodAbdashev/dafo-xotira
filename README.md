@@ -1,37 +1,48 @@
-# Telegram Course Registration Bot
+# Super Xotira Telegram Bot
 
-This is a Telegram bot that provides course information and handles course registration.
+Bu bot orqali foydalanuvchilar "Super Xotira" masterklassiga ro'yxatdan o'tishlari va kurs haqida ma'lumot olishlari mumkin.
 
-## Features
+## Bot funksionalligi
 
-- Course information display
-- Course registration with name and phone number collection
-- Beautiful UI with emojis and formatted text
+1. **Asosiy menyu**
+   - Kurs haqida ma'lumot olish
+   - Kursga ro'yxatdan o'tish
 
-## Setup
+2. **Ro'yxatdan o'tish jarayoni**
+   - Foydalanuvchi ismini kiritish
+   - Telefon raqamini yuborish
+   - Ro'yxatdan o'tish tasdiqlanadi
+   - Foydalanuvchiga maxsus fayl yuboriladi
 
-1. Install the required dependencies:
+3. **Admin paneli**
+   - Yangi ro'yxatdan o'tgan foydalanuvchilar haqida ma'lumot
+   - Foydalanuvchi ID, ism va telefon raqami
+
+## O'rnatish va ishga tushirish
+
+1. Kerakli paketlarni o'rnatish:
 ```bash
 pip install -r requirements.txt
 ```
 
-2. Create a `.env` file in the project root and add your Telegram bot token:
+2. `.env` faylini yaratish va bot tokenini qo'shish:
 ```
 TELEGRAM_BOT_TOKEN=your_bot_token_here
+ADMIN_ID=your_telegram_id
 ```
 
-3. Run the bot:
+3. Botni ishga tushirish:
 ```bash
 python bot.py
 ```
 
-## How to Use
+## Fayl yuborish
 
-1. Start the bot by sending `/start` command
-2. Choose between two options:
-   - "Kurs haqida to'liq ma'lumot olmoqchiman" - Get detailed course information
-   - "Kursda qatnashmoqchiman" - Register for the course
+Ro'yxatdan o'tish muvaffaqiyatli yakunlangandan so'ng, foydalanuvchiga quyidagi fayllar yuboriladi:
+- Kurs dasturi
+- Tayyorgarlik bo'yicha ko'rsatmalar
+- Qo'shimcha ma'lumotlar
 
-## Note
+## Eslatma
 
-Make sure to get your bot token from [@BotFather](https://t.me/botfather) on Telegram. 
+Bot tokenini [@BotFather](https://t.me/botfather) orqali olishingiz mumkin. 

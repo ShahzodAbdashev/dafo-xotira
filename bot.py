@@ -10,7 +10,7 @@ from aiogram.utils.keyboard import InlineKeyboardBuilder
 from aiogram.utils.i18n import gettext as _
 
 # Bot token
-TOKEN = '7622069536:AAEs8Bzvkg7xFJ5LxW1gI0G1-KJW4HxOF_c'
+TOKEN = '7957217008:AAFOsPJSE0orwIGp_CGUVpX4Xf1Cw1PNOrg'
 ADMIN_ID = 7054963789  # Replace with your Telegram ID
 
 # Logging
@@ -121,11 +121,17 @@ async def process_phone(message: types.Message, state: FSMContext):
         reply_markup=main_keyboard()
     )
     
+    await message.answer_document(
+            document=types.FSInputFile("./data.pptx"),
+            caption="📚 Hayotizdagi arzon rohatlar "
+        )
+    
     # Send registration data to admin
     admin_message = (
         f"🆕 Yangi ro'yxatdan o'tgan foydalanuvchi:\n\n"
         f"👤 Ism: {name}\n"
         f"📱 Telefon: {phone}\n"
+        f"🆔 User ID: {message.from_user.id}\n"
         f"👤 Username: @{message.from_user.username if message.from_user.username else 'Mavjud emas'}"
     )
     await message.bot.send_message(ADMIN_ID, admin_message)
