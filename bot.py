@@ -10,7 +10,7 @@ from aiogram.utils.keyboard import InlineKeyboardBuilder
 from aiogram.utils.i18n import gettext as _
 
 # Bot token
-TOKEN = '7957217008:AAFOsPJSE0orwIGp_CGUVpX4Xf1Cw1PNOrg'
+TOKEN = '7622069536:AAEs8Bzvkg7xFJ5LxW1gI0G1-KJW4HxOF_c'
 ADMIN_ID = 7054963789  # Replace with your Telegram ID
 
 # Logging
@@ -145,3 +145,4 @@ async def main():
 if __name__ == "__main__":
     import asyncio
     asyncio.run(main()) 
+
